@@ -1,0 +1,58 @@
+@model IEnumerable<Miapp.Models.Municipio>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" />
+
+<div class="alert alert-warning" role="alert">
+    <div class="text-center">
+<h1>Vista de Municipios</h1>
+</div></div>
+
+<p>
+    <a class="btn btn-outline-success" asp-action="Create" role="button">Crear nuevo registro</a>
+</p>
+<table class="table table-bordered border-primary table-info text-dark ">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.poblacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.latitud)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.longitud)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.poblacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.latitud)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.longitud)
+            </td>
+            <td>
+                <a class="btn btn-outline-success" asp-action="Edit" role="button" asp-route-id="@item.municipioID">Editar</a> |
+                <a class="btn btn-outline-primary" asp-action="Details" role="button" asp-route-id="@item.municipioID">Detalles</a> |
+                <a class="btn btn-outline-danger" asp-action="Delete" role="button" asp-route-id="@item.municipioID">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,51 @@
+@model Miapp.Models.Municipio
+
+@{
+    ViewData["Title"] = "Eliminar registro";
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" />
+
+<div class="alert alert-danger" role="alert">
+    <div class="text-center">
+<h1>Eliminar un registro</h1>
+</div></div>
+
+
+<h3>¿Está seguro de eliminar este registro?</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nombre)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nombre)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.poblacion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.poblacion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.latitud)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.latitud)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.longitud)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.longitud)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="municipioID" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" /> |
+        <a class="btn btn-secondary" asp-action="Index" role="button">Regresar a la lista</a>
+    
+    </form>
+</div>
