@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Miapp.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Miapp.Controllers
 {
+    [Authorize]
     public class MunicipioController : Controller
     {
         private readonly MunicipalityContext _context;

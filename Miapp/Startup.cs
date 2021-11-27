@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace Miapp
 {
@@ -26,8 +27,29 @@ namespace Miapp
         {
             services.AddControllersWithViews();
 
+
+
             services.AddDbContext<MunicipalityContext>(options =>
                     options.UseMySQL(Configuration.GetConnectionString("MunicipalityContext")));
+
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                    .AddDefaultUI()
+                    .AddEntityFrameworkStores<MunicipalityContext>()
+                    .AddDefaultTokenProviders();
+
+
+            services.ConfigureApplicationCookie(options=>{
+                options.LoginPath="/Login";
+                options.AccessDeniedPath="/AccessDenied";
+                options.SlidingExpiration=true;
+        });
+
+            services.AddRazorPages(options=>{
+                options.Conventions.AddAreaPageRoute("Identity","/Account/Login","/Login");
+                options.Conventions.AddAreaPageRoute("Identity","/Account/Register","/Register");
+                options.Conventions.AddAreaPageRoute("Identity","/Account/AccessDenied","/AccessDenied");
+
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,9 +67,13 @@ namespace Miapp
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseDefaultFiles();
 
             app.UseRouting();
 
+            app.UseStatusCodePages();
+
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
@@ -55,6 +81,7 @@ namespace Miapp
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                    endpoints.MapRazorPages();
             });
         }
     }
