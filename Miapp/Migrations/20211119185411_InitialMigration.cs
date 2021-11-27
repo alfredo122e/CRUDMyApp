@@ -8,26 +8,26 @@ namespace Miapp.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Municipio",
+                name: "Consultory",
                 columns: table => new
                 {
-                    municipioID = table.Column<int>(type: "int", nullable: false)
+                    ConsultoryID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySQL:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
-                    nombre = table.Column<string>(type: "text", nullable: false),
-                    poblacion = table.Column<string>(type: "text", nullable: false),
-                    latitud = table.Column<string>(type: "text", nullable: false),
-                    longitud = table.Column<string>(type: "text", nullable: false)
+                    nombre  = table.Column<string>(type: "text", nullable: false),
+                    enfermedad = table.Column<string>(type: "text", nullable: false),
+                    medicina = table.Column<string>(type: "text", nullable: false),
+                   
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Municipio", x => x.municipioID);
+                    table.PrimaryKey("PK_Consultory", x => x.ConsultoryID);
                 });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Municipio");
+                name: "Consultory");
         }
     }
 }

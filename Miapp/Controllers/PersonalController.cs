@@ -14,12 +14,12 @@ namespace Miapp.Controllers
         public IActionResult Index()
         {
             Persona personal=new Persona();
-            personal.nombre="Alfredo";
-            personal.apellido="Lainez";
-            personal.edad=18;
-            personal.correo="Zelayalainea@gmail.com";
-            personal.telefono="7689-3468";
-            personal.direccion="Berlín, Usulután";
+            personal.nombre="David";
+            personal.apellido="Chicas";
+            personal.edad=19;
+            personal.correo="isaacdavid959@gmail.com";
+            personal.telefono="7280-9747";
+            personal.direccion="San Francisco Gotera, Morazan";
 
             return View(personal);
         }

@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Miapp.csproj",
+  "FilePath": "d:\\AppCrud\\AppCrud.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15616,126 +15616,76 @@
     ],
     "CSharpLanguageVersion": 900
   },
-  "RootNamespace": "Miapp",
+  "RootNamespace": "AppCrud",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Views\\Shared\\_Municipio.cshtml",
-      "TargetPath": "Views\\Shared\\_Municipio.cshtml",
+      "FilePath": "d:\\AppCrud\\Views\\Shared\\_Consult.cshtml",
+      "TargetPath": "Views\\Shared\\_Consult.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Views\\Municipio\\Edit.cshtml",
-      "TargetPath": "Views\\Municipio\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Views\\Municipio\\Details.cshtml",
-      "TargetPath": "Views\\Municipio\\Details.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Views\\Shared\\_LoginPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ManageNav.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Views\\Personal\\index.cshtml",
-      "TargetPath": "Views\\Personal\\index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Views\\Municipio\\Index.cshtml",
-      "TargetPath": "Views\\Municipio\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Views\\Shared\\_Layout.cshtml",
+      "FilePath": "d:\\AppCrud\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Views\\_ViewStart.cshtml",
+      "FilePath": "d:\\AppCrud\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\_ViewImports.cshtml",
+      "FilePath": "d:\\AppCrud\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "d:\\AppCrud\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Views\\Municipio\\Delete.cshtml",
-      "TargetPath": "Views\\Municipio\\Delete.cshtml",
+      "FilePath": "d:\\AppCrud\\Views\\Consultory\\Index.cshtml",
+      "TargetPath": "Views\\Consultory\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "FilePath": "d:\\AppCrud\\Views\\Consultory\\Create.cshtml",
+      "TargetPath": "Views\\Consultory\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FilePath": "d:\\AppCrud\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Views\\Municipio\\Create.cshtml",
-      "TargetPath": "Views\\Municipio\\Create.cshtml",
+      "FilePath": "d:\\AppCrud\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
-      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FilePath": "d:\\AppCrud\\Views\\Consultory\\Edit.cshtml",
+      "TargetPath": "Views\\Consultory\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Iveth Ulloa\\MyApp\\Miapp\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "d:\\AppCrud\\Views\\Personal\\index.cshtml",
+      "TargetPath": "Views\\Personal\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\AppCrud\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\AppCrud\\Views\\Consultory\\Delete.cshtml",
+      "TargetPath": "Views\\Consultory\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\AppCrud\\Views\\Consultory\\Details.cshtml",
+      "TargetPath": "Views\\Consultory\\Details.cshtml",
       "FileKind": "mvc"
     }
   ],

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Miapp.Migrations
 {
-    [DbContext(typeof(MunicipalityContext))]
+    [DbContext(typeof(ConsultoryContext))]
     [Migration("20211119185411_InitialMigration")]
     partial class InitialMigration
     {
@@ -17,31 +17,28 @@ namespace Miapp.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 64)
                 .HasAnnotation("ProductVersion", "5.0.0");
 
-            modelBuilder.Entity("Miapp.Models.Municipio", b =>
+            modelBuilder.Entity("Miapp.Models.Consultory", b =>
                 {
-                    b.Property<int>("municipioID")
+                    b.Property<int>("IDPaciente")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("latitud")
+                    b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("longitud")
+                    b.Property<string>("Enfermedad")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("nombre")
+                    b.Property<string>("Medicina")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("poblacion")
-                        .IsRequired()
-                        .HasColumnType("text");
 
-                    b.HasKey("municipioID");
+                    b.HasKey("IDPaciente");
 
-                    b.ToTable("Municipio");
+                    b.ToTable("Consultory");
                 });
 #pragma warning restore 612, 618
         }
