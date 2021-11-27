@@ -1,6 +1,6 @@
 using System;
 
-namespace Miapp.Models
+namespace primeraAplicacion.Models
 {
     public class Persona
     {

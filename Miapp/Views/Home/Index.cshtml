@@ -1,8 +1,136 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Perro";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Bienvenidos</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center p-3 mb-2 bg-success text-white">
+    <h1 class="display-3 font-weight-bold">Welcome </h1>
+    <div class="alert alert-success font-weight-bold" role="alert">
+        Registro perros
+    </div> 
 </div>
+
+<div class="row">
+
+                        <!-- Area Chart -->
+                        <div class="col-xl-8 col-lg-7">
+                            <div 
+                            class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary"></h6>
+                                   
+                            </div>
+                            
+                             <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                 <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Registros</h6>
+                                    <div class="dropdown no-arrow">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                        </a>
+                                       
+                                    </div>
+                                </div>
+
+                                <!-- Card Body -->
+                                
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th> Perro ID  </th>
+                                                <th> Nombre  </th>
+                                                <th> Raza  </th>
+                                                <th> Edad  </th>
+                                                <th> Vacunas  </th>
+                                                <th> Nombre Dueño  </th>
+                                                <th> Telefono</th>                                                
+                                            </thead>
+                                          <tbody>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>Luna</td>
+                                                <td>Labrador</td>
+                                                <td>2 años</td>
+                                                <td>Si</td>
+                                                <td>Amanda Martinez</td>
+                                                <td>2669-4514</td>
+                                                
+                                               </tr>
+                                                <tr>
+                                                    <td>002</td>
+                                                <td>Maya</td>
+                                                <td>Lebrel</td>
+                                                <td>3 años</td>
+                                                <td>Si</td>
+                                                <td>Gloria Hernandez</td>
+                                                <td>2564-2484</td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td>003</td>
+                                                <td>Bruno</td>
+                                                <td>Lakeland</td>
+                                                <td>1 años </td>
+                                                <td>No</td>
+                                                <td>Luis Quintanilla</td>
+                                                <td>2848-5475</td>
+                                            </tr>
+                                            <tr>
+                                                <td>004</td>
+                                                <td>Max</td>
+                                                <td>Lebrel escocés</td>
+                                                <td>4 años </td>
+                                                <td>Si</td>
+                                                <td>Armando Guardado</td>
+                                                <td>2624-2567</td>
+                                            </tr>
+                                            <tr>
+                                                <td>005</td>
+                                                <td>Rocky</td>
+                                                <td>Mastín inglés</td>
+                                                <td>5 años</td>
+                                                <td>Si</td>
+                                                <td>Alfredo Zelaya</td>
+                                                <td>2648-2485</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                
+                                </div>
+                        </div>
+
+                        <!-- Pie Chart -->
+                        <div class="col-xl-4 col-lg-5">
+                            <div class="card shadow mb-4">
+                                <!-- Card Header - Dropdown -->
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Vacunas</h6>
+                                    <div class="dropdown no-arrow">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-pie pt-4 pb-2">
+                                        <canvas id="myPieChart"></canvas>
+                                    </div>
+                                    <div class="mt-4 text-center small">
+                                        <span class="mr-2">
+                                            <i class="fas fa-circle text-primary"></i> Todas sus vacunas
+                                        </span>
+                                        <span class="mr-2">
+                                            <i class="fas fa-circle text-success"></i> Ninguna
+                                        </span>
+                                        <span class="mr-2">
+                                            <i class="fas fa-circle text-info"></i> Algunas
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+

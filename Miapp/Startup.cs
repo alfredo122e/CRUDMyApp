@@ -10,7 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 
-namespace Miapp
+namespace primeraAplicacion
 {
     public class Startup
     {
@@ -26,8 +26,13 @@ namespace Miapp
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<MunicipalityContext>(options =>
-                    options.UseMySQL(Configuration.GetConnectionString("MunicipalityContext")));
+
+            //se agrego contexto
+            services.AddDbContext<LibraryContext>(options =>
+                    options.UseMySQL(Configuration.GetConnectionString("LibraryContext")));
+
+            services.AddDbContext<PerroContext>(options =>
+                    options.UseMySQL(Configuration.GetConnectionString("PerroContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

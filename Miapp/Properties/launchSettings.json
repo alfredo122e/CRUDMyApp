@@ -3,8 +3,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:39748",
-      "sslPort": 44316
+      "applicationUrl": "http://localhost:53099",
+      "sslPort": 44325
     }
   },
   "profiles": {
@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Miapp": {
+    "primeraAplicacion": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

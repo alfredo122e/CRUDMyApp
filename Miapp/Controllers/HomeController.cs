@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Miapp.Models;
+using primeraAplicacion.Models;
 
-namespace Miapp.Controllers
+namespace primeraAplicacion.Controllers
 {
     public class HomeController : Controller
     {
@@ -23,6 +23,20 @@ namespace Miapp.Controllers
             return View();
         }
 
+        //metodo para mostrar pagina personal
+        public IActionResult Personal()
+        {
+            return View();
+        }
+        public IActionResult Tables()
+        {
+            return View();
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
